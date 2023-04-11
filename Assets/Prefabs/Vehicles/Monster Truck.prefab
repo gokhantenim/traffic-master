@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7647266431060380315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7647266431060380314}
+  - component: {fileID: 7647266431060380309}
+  - component: {fileID: 1424350905875494558}
+  - component: {fileID: 8423386246819653176}
+  m_Layer: 0
+  m_Name: Monster Truck
+  m_TagString: Vehicle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7647266431060380314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647266431060380315}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7889312713869991622}
+  - {fileID: 682620555234675864}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7647266431060380309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647266431060380315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960b94766f9b4434fb0083140db12d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EndPoint: {fileID: 7889312713869991622}
+  isMyVehicle: 0
+  Speed: 0
+  SideMovementSpeed: 10
+  CurrentLane: 1
+  _wheels:
+  - {fileID: 7974816212628663684}
+  - {fileID: 1931838058198497412}
+  - {fileID: 5772966461217877491}
+  - {fileID: 6953084837681729325}
+--- !u!65 &1424350905875494558
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647266431060380315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1027887, y: 2.5745323, z: 4.4792314}
+  m_Center: {x: -0.0010992289, y: 1.3632835, z: 2.5867736}
+--- !u!54 &8423386246819653176
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647266431060380315}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!1 &8466050681424575626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7889312713869991622}
+  m_Layer: 0
+  m_Name: EndPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7889312713869991622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8466050681424575626}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5.13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7647266431060380314}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1077379258673392499
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7647266431060380314}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.45
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6a2ab0f57208634889d21da2ca9b443,
+        type: 3}
+      propertyPath: m_Name
+      value: Monster Truck
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d6a2ab0f57208634889d21da2ca9b443, type: 3}
+--- !u!4 &682620555234675864 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d6a2ab0f57208634889d21da2ca9b443,
+    type: 3}
+  m_PrefabInstance: {fileID: 1077379258673392499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1931838058198497412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7765091135984659465, guid: d6a2ab0f57208634889d21da2ca9b443,
+    type: 3}
+  m_PrefabInstance: {fileID: 1077379258673392499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5772966461217877491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2382917869345487232, guid: d6a2ab0f57208634889d21da2ca9b443,
+    type: 3}
+  m_PrefabInstance: {fileID: 1077379258673392499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6953084837681729325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1257120673726897058, guid: d6a2ab0f57208634889d21da2ca9b443,
+    type: 3}
+  m_PrefabInstance: {fileID: 1077379258673392499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7974816212628663684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2278922920596601097, guid: d6a2ab0f57208634889d21da2ca9b443,
+    type: 3}
+  m_PrefabInstance: {fileID: 1077379258673392499}
+  m_PrefabAsset: {fileID: 0}
